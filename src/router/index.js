@@ -1,10 +1,9 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Blogs from "../views/Blogs.vue";
-import Login from "../views/Login.vue";
-import Register from "../views/Register.vue";
-import ForgotPassword from "../views/ForgotPassword.vue";
+import About from "../views/About.vue";
+import Projects from "../views/Projects.vue";
+import Contact from "../views/Contact.vue";
 
 Vue.use(VueRouter);
 
@@ -18,35 +17,27 @@ const routes = [
     },
   },
   {
-    path: "/blogs",
-    name: "Blogs",
-    component: Blogs,
+    path: "/about",
+    name: "About",
+    component: About,
     meta: {
-      title: "Blogs",
+      title: "About Me",
     },
   },
   {
-    path: "/login",
-    name: "Login",
-    component: Login,
+    path: "/projects",
+    name: "Projects",
+    component: Projects,
     meta: {
-      title: "Login",
+      title: "Projects",
     },
   },
   {
-    path: "/register",
-    name: "Register",
-    component: Register,
+    path: "/contact",
+    name: "Contact",
+    component: Contact,
     meta: {
-      title: "Register",
-    },
-  },
-  {
-    path: "/forgot-password",
-    name: "ForgotPassword",
-    component: ForgotPassword,
-    meta: {
-      title: "Forgot Password",
+      title: "Contact",
     },
   },
 ];

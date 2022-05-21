@@ -24,7 +24,7 @@
       </div>
     </div>
     <div class="profile-right">
-      <h1>Hello</h1>
+      <h1>Hello...</h1>
       <h2>Here's who I am and what I do</h2>
       <div class="profile-button">
         <button>Resume</button>
@@ -94,16 +94,11 @@ export default {
 
   .social-media {
     display: flex;
-    // flex-direction: row;
-    // display: inline-block;
     color: #fff;
     width: 100%;
     list-style: none;
     margin: 0;
     justify-content: center;
-    // li {
-    //   display: block;
-    // }
     margin-top: 12px;
     a {
       margin: 16px 6px;
@@ -142,7 +137,8 @@ export default {
     p {
       color: #1c0522;
       text-align: justify;
-      padding: 16px;
+      padding: 16px 14px 30px;
+      font-weight: 500;
     }
   }
 }

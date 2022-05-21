@@ -110,6 +110,7 @@ section {
   white-space: nowrap;
   font-size: 7.5vw;
   z-index: 9;
+  font-weight: 700;
 }
 
 #btn {
