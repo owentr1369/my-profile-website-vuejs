@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <BlogPostComp :post="welcomeScreen" />
+    <!-- <BlogPostComp :post="welcomeScreen" />
     <BlogPostComp
       :post="post"
       v-for="(post, index) in sampleBlogPost"
@@ -25,17 +25,19 @@
           Register for FireBlogs <Arrow class="arrow arrow-light" />
         </router-link>
       </div>
-    </div>
+    </div> -->
+    <ParallaxScroller />
   </div>
 </template>
 
 <script>
-import Arrow from "../assets/Icons/arrow-right-light.svg";
-import BlogPostComp from "../components/BlogPostComp.vue";
-import BlogCardComp from "../components/BlogCardComp.vue";
+// import Arrow from "../assets/Icons/arrow-right-light.svg";
+// import BlogPostComp from "../components/BlogPostComp.vue";
+// import BlogCardComp from "../components/BlogCardComp.vue";
+import ParallaxScroller from "../components/ParallaxScroller.vue";
 export default {
   name: "Home",
-  components: { BlogPostComp, BlogCardComp, Arrow },
+  components: { ParallaxScroller },
   data() {
     return {
       welcomeScreen: {
