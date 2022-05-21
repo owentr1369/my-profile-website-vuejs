@@ -62,4 +62,88 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.profile-wrap {
+  min-width: 750px;
+  margin-top: 24px;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  .profile-left {
+    display: block;
+    .avt {
+      width: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 80%;
+        min-width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    .name,
+    h3 {
+      justify-content: center;
+      text-align: center;
+      margin-top: 12px;
+    }
+  }
+
+  .social-media {
+    display: flex;
+    // flex-direction: row;
+    // display: inline-block;
+    color: #fff;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    justify-content: center;
+    // li {
+    //   display: block;
+    // }
+    margin-top: 12px;
+    a {
+      margin: 16px 6px;
+
+      svg {
+        color: #fff;
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+  .profile-right {
+    background: #ecedfc;
+    color: #1c0522;
+    border-radius: 12px;
+    h1,
+    h2 {
+      font-size: 84px;
+      color: #1c0522;
+      margin-left: 8px;
+    }
+    h2 {
+      color: #1c0522;
+      margin-left: 12px;
+      font-size: 22px;
+    }
+    .profile-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button {
+        margin: 12px 12px 10px 12px;
+      }
+    }
+
+    p {
+      color: #1c0522;
+      text-align: justify;
+      padding: 16px;
+    }
+  }
+}
 </style>
