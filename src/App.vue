@@ -52,6 +52,8 @@ export default {
   padding: 0;
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
+  scroll-behavior: smooth;
+  color: #fff;
 }
 
 .app {

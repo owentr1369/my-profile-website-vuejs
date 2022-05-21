@@ -74,8 +74,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.container {
+  color: #fff;
+}
 header {
-  background-color: #fff;
+  background-color: #260e4a;
   padding: 0 25px;
   box-shadow: 0 4px 6px -1px rgba($color: #000000, $alpha: 0.1),
     0 4px 6px -1px rgba($color: #000000, $alpha: 0.06);
@@ -83,7 +86,7 @@ header {
 
   .link {
     font-weight: 500;
-    padding: 0 px;
+    padding: 0;
     transition: 0.3s color ease;
 
     &:hover {
@@ -109,7 +112,7 @@ header {
       .header {
         font-weight: 600;
         font-size: 24px;
-        color: #000;
+        color: #fff;
         text-decoration: none;
         margin-right: 8px;
         @media (max-width: 700px) {
@@ -127,6 +130,7 @@ header {
         margin-right: 16px;
         .link {
           margin-right: 16px;
+          color: #fff;
         }
         .link:last-child {
           margin-right: 0;
@@ -141,6 +145,7 @@ header {
     right: 25px;
     height: 25px;
     width: auto;
+    color: #fff;
   }
 
   .mobile-nav {
@@ -151,7 +156,7 @@ header {
     flex-direction: column;
     position: fixed;
     height: 100%;
-    background-color: #303030;
+    background-color: #260e4a;
     top: 0;
     left: 0;
     .link {
