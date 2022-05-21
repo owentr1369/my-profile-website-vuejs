@@ -3,18 +3,22 @@
     <nav class="container">
       <div class="branding">
         <router-link class="header" :to="{ name: 'Home' }"
-          >FireBlogs</router-link
-        >
+          >Tran Tam
+        </router-link>
+        <h1 v-show="!mobile" class="slash">|</h1>
+        <p class="header">Frontend Developer</p>
       </div>
       <div class="nav-links">
         <ul v-show="!mobile">
           <router-link class="link" :to="{ name: 'Home' }">Home</router-link>
-          <router-link class="link" :to="{ name: 'Blogs' }">Blogs</router-link>
           <router-link class="link" :to="{ name: 'Blogs' }"
-            >Create Post</router-link
+            >About Me</router-link
+          >
+          <router-link class="link" :to="{ name: 'Blogs' }"
+            >Projects</router-link
           >
           <router-link class="link" :to="{ name: 'Login' }"
-            >Login/Register</router-link
+            >Contact</router-link
           >
         </ul>
       </div>
@@ -79,11 +83,17 @@ header {
 
   .link {
     font-weight: 500;
-    padding: 0 8px;
+    padding: 0 px;
     transition: 0.3s color ease;
 
     &:hover {
       color: #1eb8b8;
+    }
+  }
+  p {
+    margin-left: 8px;
+    @media (max-width: 700px) {
+      margin-left: 0;
     }
   }
   nav {
@@ -92,11 +102,19 @@ header {
     .branding {
       display: flex;
       align-items: center;
+      @media (max-width: 700px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
       .header {
         font-weight: 600;
         font-size: 24px;
         color: #000;
         text-decoration: none;
+        margin-right: 8px;
+        @media (max-width: 700px) {
+          margin-left: 0;
+        }
       }
     }
     .nav-links {
@@ -106,9 +124,9 @@ header {
       align-items: center;
       justify-content: flex-end;
       ul {
-        margin-right: 32px;
+        margin-right: 16px;
         .link {
-          margin-right: 32px;
+          margin-right: 16px;
         }
         .link:last-child {
           margin-right: 0;
