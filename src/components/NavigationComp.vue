@@ -17,9 +17,6 @@
           <router-link class="link" :to="{ name: 'Projects' }"
             >Projects</router-link
           >
-          <router-link class="link" :to="{ name: 'Contact' }"
-            >Contact</router-link
-          >
         </ul>
       </div>
     </nav>
@@ -30,9 +27,6 @@
         <router-link class="link" :to="{ name: 'About' }">About</router-link>
         <router-link class="link" :to="{ name: 'Projects' }"
           >Projects</router-link
-        >
-        <router-link class="link" :to="{ name: 'Contact' }"
-          >Contact</router-link
         >
       </ul>
     </transition>
@@ -127,10 +121,11 @@ header {
       align-items: center;
       justify-content: flex-end;
       ul {
-        margin-right: 16px;
+        margin-right: 40px;
         .link {
-          margin-right: 16px;
+          margin-right: 12px;
           color: #fff;
+          padding: 0 8px;
         }
         .link:last-child {
           margin-right: 0;

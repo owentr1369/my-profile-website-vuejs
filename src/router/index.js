@@ -3,7 +3,6 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import Projects from "../views/Projects.vue";
-import Contact from "../views/Contact.vue";
 
 Vue.use(VueRouter);
 
@@ -30,14 +29,6 @@ const routes = [
     component: Projects,
     meta: {
       title: "Projects",
-    },
-  },
-  {
-    path: "/contact",
-    name: "Contact",
-    component: Contact,
-    meta: {
-      title: "Contact",
     },
   },
 ];

@@ -13,13 +13,31 @@
           <a class="svg-icon" href="#"> <youTube /> </a>
         </div>
         <div>
-          <a class="svg-icon" href="#"> <twitter /> </a>
+          <a
+            target="_blank"
+            class="svg-icon"
+            href="https://twitter.com/tamtamjs"
+          >
+            <twitter />
+          </a>
         </div>
         <div>
-          <a class="svg-icon" href="#"> <instagram /> </a>
+          <a
+            target="_blank"
+            class="svg-icon"
+            href="https://www.instagram.com/tamtamjs/"
+          >
+            <instagram />
+          </a>
         </div>
         <div>
-          <a class="svg-icon" href="#"> <linkedin /> </a>
+          <a
+            class="svg-icon"
+            target="_blank"
+            href="https://www.linkedin.com/in/thien-tam-tran-9a4725225/"
+          >
+            <linkedin />
+          </a>
         </div>
       </div>
     </div>
@@ -28,7 +46,9 @@
       <h2>Here's who I am and what I do</h2>
       <div class="profile-button">
         <button>Resume</button>
-        <button>Projects</button>
+        <router-link :to="{ name: 'Projects' }">
+          <button>Projects</button>
+        </router-link>
       </div>
       <p>
         Hi! I am passionate about technology, innovation and big challenging
