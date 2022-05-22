@@ -7,9 +7,9 @@
     <div class="info">
       <h4>{{ post.blogTitle }}</h4>
       <h6>Posted on: {{ post.blogDate }}</h6>
-      <router-link class="link" to="#">
+      <a class="link" target="_blank" :href="`${post.blogLink}`">
         Explore project<Arrow class="arrow" />
-      </router-link>
+      </a>
     </div>
   </div>
 </template>
@@ -36,53 +36,14 @@ export default {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: #ecedfc;
   min-height: 420px;
   overflow-x: hidden;
 
   &:hover {
-    transform: rotateZ(-1deg) scale(1.01);
-    box-shadow: 0 4px 6px -1px rgba($color: #000000, $alpha: 0.1),
-      0 2px 4px -1px rgba($color: #000000, $alpha: 0.06);
-  }
-  .icons {
-    display: flex;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 99;
-    .icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      background-color: #fff;
-      transition: 0.5s ease all;
-
-      &:hover {
-        background-color: #303030;
-
-        .edit,
-        .delete {
-          path {
-            svg {
-              fill: #fff;
-            }
-          }
-        }
-      }
-      //   &:nth-child(1) {
-      //     margin-right: 8px;
-      //   }
-      .edit,
-      .delete {
-        pointer-events: none;
-        height: 14px;
-        width: auto;
-      }
-    }
+    transform: rotateZ(-2deg) scale(1.01);
+    box-shadow: 0 8px 12px -2px rgba($color: #000000, $alpha: 0.1),
+      0 4px 8px -2px rgba($color: #000000, $alpha: 0.06);
   }
   img {
     display: block;
@@ -100,25 +61,27 @@ export default {
     z-index: 3;
     padding: 34px 16px;
     color: #000;
+    font-weight: 500;
 
     h4 {
       padding-bottom: 8px;
-      font-size: 20px;
-      font-weight: 300;
+      font-size: 24px;
+      color: #000;
+      min-height: 70px;
     }
 
     h6 {
-      font-weight: 400;
-      font-size: 12px;
+      font-size: 16px;
       padding-bottom: 16px;
+      color: #000;
     }
 
     .link {
       display: inline-flex;
       align-items: center;
-      margin-top: auto;
-      padding-top: 20px;
-      font-size: 12px;
+      margin-top: 30px;
+      padding-top: 10px;
+      font-size: 14px;
       font-weight: 500;
       padding-bottom: 4px;
       transition: 0.5 ease-in all;

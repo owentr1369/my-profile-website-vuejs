@@ -84,7 +84,7 @@ footer {
 
     .left {
       gap: 32px;
-      color: #fff;
+      color: #fff !important;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -95,7 +95,7 @@ footer {
       }
       .header {
         font-size: 24px;
-        color: #fff;
+        color: #ecedfc;
         text-decoration: none;
         font-weight: 600;
         @media (max-width: 800px) {
@@ -106,6 +106,7 @@ footer {
         gap: 16px;
         list-style: none;
         display: flex;
+        color: #fff !important;
       }
 
       .col-1,
@@ -127,13 +128,13 @@ footer {
         }
         ul {
           margin-top: auto;
+          color: #ecedfc !important;
           li {
             display: flex;
             align-items: center;
             .svg-icon {
               width: 24px;
               height: auto;
-              color: #fff;
             }
           }
         }

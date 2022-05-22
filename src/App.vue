@@ -53,7 +53,7 @@ export default {
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
   scroll-behavior: smooth;
-  color: #fff;
+  color: #ecedfc;
 }
 
 .app {
@@ -75,7 +75,7 @@ export default {
 }
 
 .link-light {
-  color: #fff;
+  color: #ecedfc;
 }
 .arrow {
   margin-left: 8px;
@@ -86,7 +86,7 @@ export default {
 }
 .arrow-light {
   path {
-    fill: #fff;
+    fill: #ecedfc;
   }
 }
 
@@ -97,7 +97,7 @@ button,
   margin-top: 24px;
   padding: 12px 24px;
   background-color: #303030;
-  color: #fff;
+  color: #ecedfc;
   border-radius: 20px;
   border: none;
   text-transform: uppercase;
@@ -130,7 +130,7 @@ button,
 .button-light {
   background-color: transparent;
   border: 2px solid #fff;
-  color: #fff;
+  color: #ecedfc;
 }
 .button-inactive {
   pointer-events: none !important;

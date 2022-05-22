@@ -7,24 +7,28 @@ export default new Vuex.Store({
   state: {
     sampleBlogCards: [
       {
-        blogTitle: "Blog Card #1",
+        blogTitle: "TamTamMovies",
         blogCoverPhoto: "stock-1",
         blogDate: "May 1, 2021",
+        blogLink: "https://github.com/owentr1369/tamtammovies",
       },
       {
-        blogTitle: "Blog Card #2",
+        blogTitle: "Anime Search App",
         blogCoverPhoto: "stock-2",
         blogDate: "May 1, 2021",
+        blogLink: "https://github.com/owentr1369/anime-search-app-vue3",
       },
       {
-        blogTitle: "Blog Card #3",
+        blogTitle: "Flip Card Pokemon Memories",
         blogCoverPhoto: "stock-3",
         blogDate: "May 1, 2021",
+        blogLink: "https://github.com/owentr1369/flip-card-pokemon-memories",
       },
       {
-        blogTitle: "Blog Card #4",
+        blogTitle: "F8 Music Player",
         blogCoverPhoto: "stock-4",
         blogDate: "May 1, 2021",
+        blogLink: "https://github.com/owentr1369/music_player-javascript",
       },
     ],
     editPosts: null,
