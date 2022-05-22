@@ -7,8 +7,8 @@
     <div class="info">
       <h4>{{ post.blogTitle }}</h4>
       <h6>Posted on: {{ post.blogDate }}</h6>
-      <a class="link" target="_blank" :href="`${post.blogLink}`">
-        Explore project<Arrow class="arrow" />
+      <a class="link" target="_blank" :href="`${post.blogGithubLink}`">
+        Explore on Github<Arrow class="arrow" />
       </a>
     </div>
   </div>
