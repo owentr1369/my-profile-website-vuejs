@@ -40,7 +40,7 @@ const router = new VueRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  document.title = `${to.meta.title} | FireBlog`;
+  document.title = `${to.meta.title} | Tran Tam`;
   next();
 });
 

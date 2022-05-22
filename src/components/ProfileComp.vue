@@ -45,7 +45,13 @@
       <h1>Hello...</h1>
       <h2>Here's who I am and what I do</h2>
       <div class="profile-button">
-        <button>Resume</button>
+        <a
+          href="../assets/Tran Thien Tam Resume.pdf"
+          download="TranThienTamResume"
+        >
+          <button>Resume</button></a
+        >
+
         <router-link :to="{ name: 'Projects' }">
           <button>Projects</button>
         </router-link>

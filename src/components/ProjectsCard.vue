@@ -1,13 +1,5 @@
 <template>
   <div class="blog-card">
-    <div v-show="editPost" class="icons">
-      <div class="icon">
-        <Edit class="icon edit" />
-      </div>
-      <div class="icon">
-        <Delete class="icon delete" />
-      </div>
-    </div>
     <img
       :src="require(`../assets/blogCards/${post.blogCoverPhoto}.jpg`)"
       alt=""
@@ -16,7 +8,7 @@
       <h4>{{ post.blogTitle }}</h4>
       <h6>Posted on: {{ post.blogDate }}</h6>
       <router-link class="link" to="#">
-        View the post <Arrow class="arrow" />
+        Explore project<Arrow class="arrow" />
       </router-link>
     </div>
   </div>
@@ -24,13 +16,11 @@
 
 <script>
 import Arrow from "../assets/Icons/arrow-right-light.svg";
-import Edit from "../assets/Icons/edit-regular.svg";
-import Delete from "../assets/Icons/trash-regular.svg";
 
 export default {
-  name: "blogCard",
+  name: "ProjectsCard",
   props: ["post"],
-  components: { Arrow, Edit, Delete },
+  components: { Arrow },
   computed: {
     editPost() {
       return this.$store.state.editPosts;
