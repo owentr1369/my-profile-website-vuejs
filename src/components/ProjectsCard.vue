@@ -38,7 +38,7 @@ export default {
   border-radius: 8px;
   background-color: #fff;
   min-height: 420px;
-  transition: 0.5s ease all;
+  overflow-x: hidden;
 
   &:hover {
     transform: rotateZ(-1deg) scale(1.01);
